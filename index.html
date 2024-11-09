@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>¡PlushPalooza!</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>Bienvenidos a PlushPalooza!, somos una tienda dedicada a dar una buena calidad en muñecos de peluche a un buen precio :)</h1>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡PlushPalooza! - Tu tienda de peluches favorita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado con logo y navegación -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo de PlushPalooza" width="150">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner de bienvenida -->
+  <section class="banner">
+    <h1>¡Bienvenidos a PlushPalooza!</h1>
+    <p>La mejor calidad en peluches a precios irresistibles</p>
+    <a href="#productos" class="btn">Explora nuestra colección</a>
+  </section>
+
+  <!-- Sección de productos -->
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="producto">
+      <img src="peluche1.jpg" alt="Peluche de oso">
+      <h3>Oso de Peluche</h3>
+      <p class="descripcion">Suave y adorable. Perfecto para abrazar.</p>
+      <p class="precio">$20.00</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="producto">
+      <img src="peluche2.jpg" alt="Peluche de unicornio">
+      <h3>Unicornio de Peluche</h3>
+      <p class="descripcion">Brillante y colorido. Un amigo mágico.</p>
+      <p class="precio">$25.00</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <!-- Añadir más productos aquí -->
+  </section>
+
+  <!-- Sección de testimonios -->
+  <section id="testimonios" class="testimonios">
+    <h2>Lo que nuestros clientes dicen</h2>
+    <blockquote>
+      <p>“¡Los peluches son de la mejor calidad y a mis hijos les encantaron! Altamente recomendado.”</p>
+      <cite>- María P.</cite>
+    </blockquote>
+    <blockquote>
+      <p>“Excelente servicio y productos. Los peluches llegaron rápidamente y son adorables.”</p>
+      <cite>- Juan G.</cite>
+    </blockquote>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes preguntas? Escríbenos y con gusto te ayudaremos.</p>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2023 PlushPalooza. Todos los derechos reservados.</p>
+    <div class="redes-sociales">
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+  </footer>
+</body>
 </html>
