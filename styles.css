@@ -209,6 +209,7 @@ footer .redes-sociales a img {
 footer .redes-sociales a:hover img {
   transform: scale(1.1);
 }
+
 /* Estilos para los íconos de redes sociales */
 .logo-icon {
   width: 40px; /* Ancho del ícono */
@@ -222,3 +223,4 @@ footer .redes-sociales a:hover img {
 .logo-icon:hover {
   transform: scale(1.1); /* Agranda el ícono ligeramente al pasar el mouse */
 }
+
