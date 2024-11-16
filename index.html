@@ -1,82 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¡PlushPalooza! - Tu tienda de peluches favorita</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Peluches</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Encabezado con logo y navegación -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Logo de PlushPalooza" width="150">
+    <!-- Encabezado -->
+    <header>
+        <h1>Venta de Peluches</h1>
+        <button id="login-btn">Iniciar Sesión</button>
+    </header>
+
+    <!-- Modal de Inicio de Sesión -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Banner de bienvenida -->
-  <section class="banner">
-    <h1>¡Bienvenidos a PlushPalooza!</h1>
-    <p>La mejor calidad en peluches a precios irresistibles</p>
-    <a href="#productos" class="btn">Explora nuestra colección</a>
-  </section>
+    <!-- Sección de Productos -->
+    <main>
+        <section id="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <!-- Repite esto para 30 productos -->
+                <div class="product-card">Peluches 1</div>
+                <div class="product-card">Peluches 2</div>
+                <!-- ... -->
+                <div class="product-card">Peluches 30</div>
+            </div>
+        </section>
+    </main>
 
-  <!-- Sección de productos -->
-  <section id="productos" class="productos">
-    <h2>Nuestros Productos</h2>
-    <div class="producto">
-      <img src="peluche1.jpg" alt="Peluche de oso">
-      <h3>Oso de Peluche</h3>
-      <p class="descripcion">Suave y adorable. Perfecto para abrazar.</p>
-      <p class="precio">$20.00</p>
-      <a href="#" class="btn">Comprar</a>
-    </div>
-    <div class="producto">
-      <img src="peluche2.jpg" alt="Peluche de unicornio">
-      <h3>Unicornio de Peluche</h3>
-      <p class="descripcion">Brillante y colorido. Un amigo mágico.</p>
-      <p class="precio">$25.00</p>
-      <a href="#" class="btn">Comprar</a>
-    </div>
-    <!-- Añadir más productos aquí -->
-  </section>
+    <!-- Pie de Página -->
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://raw.githubusercontent.com/KoutNouhara/PlushPalooza/main/X.png" alt="X/Twitter" class="logo-icon"></a>
+            <a href="#"><img src="https://raw.githubusercontent.com/KoutNouhara/PlushPalooza/main/facebook.png" alt="Facebook" class="logo-icon"></a>
+            <a href="#"><img src="https://raw.githubusercontent.com/KoutNouhara/PlushPalooza/main/instagram.png" alt="Instagram" class="logo-icon"></a>
+        </div>
+    </footer>
 
-  <!-- Sección de contacto -->
-  <section id="contacto" class="contacto">
-    <h2>Contáctanos</h2>
-    <p>¿Tienes preguntas? Escríbenos y con gusto te ayudaremos.</p>
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-      
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Sección de redes sociales -->
-  <div class="redes-sociales">
-    <a href="#" aria-label="X/Twitter">
-      <img src="https://raw.githubusercontent.com/KoutNouhara/PlushPalooza/main/X.png" alt="X/Twitter" class="logo-icon">
-    </a>
-    <a href="#" aria-label="Facebook">
-      <img src="https://raw.githubusercontent.com/KoutNouhara/PlushPalooza/main/facebook.png" alt="Facebook" class="logo-icon">
-    </a>
-    <a href="#" aria-label="Instagram">
-      <img src="https://raw.githubusercontent.com/KoutNouhara/PlushPalooza/main/instagram.png" alt="Instagram" class="logo-icon">
-    </a>
-  </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
