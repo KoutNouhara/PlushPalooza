@@ -126,3 +126,35 @@ header .cart button {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* Pie de página */
+footer {
+    background-color: var(--color-purple);
+    color: var(--color-cream);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Íconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px; /* Ajuste del tamaño */
+    height: 24px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Efecto al pasar el cursor */
+}
